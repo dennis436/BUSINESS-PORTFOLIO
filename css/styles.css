@@ -40,6 +40,18 @@ header p {
   width: 100%;
   max-width: 600px;
   border-radius: 10px;
-  display: block;
+  display: flex;
   margin: 20px auto;
+}
+body.contact-page {
+  background-color: #333;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.show {
+  opacity: 1;
+  transform: translateY(0);
 }
